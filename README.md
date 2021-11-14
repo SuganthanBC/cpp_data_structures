@@ -1,3 +1,5 @@
+This is a modified version of [Eyal Amir's cpp_data_structures](https://github.com/eyalamirmusic/cpp_data_structures) for my personal uses.
+
 ea_data_structures:
 
 A collection of useful C++ data structures and helper functions I find myself using quite alot.
@@ -28,7 +30,7 @@ And many others.
 An std::map-like container that's based on a vector, allowing a way faster iteration with the cost of slower random access/inserting.
 
 ``GUIToRealTime<T>``
-A FIFO-like structure allowing lock-free data sharing between the GUI and audio/real time threads
+A FIFO-like structure allowing lock-free data sharing between the GUI and audio/real time threads modified for plugins that need to have the control of when to pull the newly pushed GUI data.
 
 ``OwningPointer<T>``
 An alternative to std::unique_ptr with slightly different semantics and more features.
